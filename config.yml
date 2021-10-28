@@ -1,0 +1,44 @@
+paths:
+  PATH_CD: cd/geo_export_778b0624-05b8-481d-9698-fd36e907b4c0
+  PATH_BB: bb/geo_export_de2fc923-b79a-4d0d-a8e7-5bcf1ee720fe
+  PATH_AP: jfk/geo_export_b14968fb-f618-40a2-8a73-eb9b4dd78c44
+  PATH_DATA: data
+  PATH_RESULT: results
+  PATH_TAXI_ZONES: taxi_zone_lookup.csv
+  PATH_TMP: tmp_files
+
+files:
+  chunksize: 500000
+
+columns:
+  ALL_COLUMNS:
+    - ['Dispatching_base_num', 'PickUp_datetime', 'DropOff_datetime', 'PUlocationID', 'DOlocationID']
+    - ['Dispatching_base_num', 'PickUp_datetime', 'DropOff_datetime', 'PUlocationID', 'DOlocationID', 'SR_Flag']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'Store_and_fwd_flag', 'RateCodeID', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude', 'Passenger_count', 'Trip_distance', 'Fare_amount', 'Extra', 'MTA_tax', 'Tip_amount', 'Tolls_amount', 'Ehail_fee', 'Total_amount', 'Payment_type', 'Trip_type ', 'extra1', 'extra2']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'Store_and_fwd_flag', 'RateCodeID', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude', 'Passenger_count', 'Trip_distance', 'Fare_amount', 'Extra', 'MTA_tax', 'Tip_amount', 'Tolls_amount', 'Ehail_fee', 'improvement_surcharge', 'Total_amount', 'Payment_type', 'Trip_type ', 'extra1', 'extra2']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'Store_and_fwd_flag', 'RateCodeID', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude', 'Passenger_count', 'Trip_distance', 'Fare_amount', 'Extra', 'MTA_tax', 'Tip_amount', 'Tolls_amount', 'Ehail_fee', 'improvement_surcharge', 'Total_amount', 'Payment_type', 'Trip_type ']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'store_and_fwd_flag', 'RatecodeID', 'PULocationID', 'DOLocationID', 'passenger_count', 'trip_distance', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'ehail_fee', 'improvement_surcharge', 'total_amount', 'payment_type', 'trip_type', 'extra1', 'extra2']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'store_and_fwd_flag', 'RatecodeID', 'PULocationID', 'DOLocationID', 'passenger_count', 'trip_distance', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'ehail_fee', 'improvement_surcharge', 'total_amount', 'payment_type', 'trip_type']
+    - ['vendor_name', 'PickUp_datetime', 'DropOff_datetime', 'Passenger_Count', 'Trip_Distance', 'Start_Lon', 'Start_Lat', 'Rate_Code', 'store_and_forward', 'End_Lon', 'End_Lat', 'Payment_Type', 'Fare_Amt', 'surcharge', 'mta_tax', 'Tip_Amt', 'Tolls_Amt', 'Total_Amt']
+    - ['vendor_id', 'PickUp_datetime', 'DropOff_datetime', 'passenger_count', 'trip_distance', 'pickup_longitude', 'pickup_latitude', 'rate_code', 'store_and_fwd_flag', 'dropoff_longitude', 'dropoff_latitude', 'payment_type', 'fare_amount', 'surcharge', 'mta_tax', 'tip_amount', 'tolls_amount', 'total_amount']
+    - ['vendor_id', 'PickUp_datetime', 'DropOff_datetime', ' passenger_count', ' trip_distance', ' pickup_longitude', ' pickup_latitude', ' rate_code', ' store_and_fwd_flag', ' dropoff_longitude', ' dropoff_latitude', ' payment_type', ' fare_amount', ' surcharge', ' mta_tax', ' tip_amount', ' tolls_amount', ' total_amount']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'passenger_count', 'trip_distance', 'pickup_longitude', 'pickup_latitude', 'RateCodeID', 'store_and_fwd_flag', 'dropoff_longitude', 'dropoff_latitude', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'passenger_count', 'trip_distance', 'pickup_longitude', 'pickup_latitude', 'RatecodeID', 'store_and_fwd_flag', 'dropoff_longitude', 'dropoff_latitude', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag', 'PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount', 'extra1', 'extra2']
+    - ['VendorID', 'PickUp_datetime', 'DropOff_datetime', 'passenger_count', 'trip_distance', 'RatecodeID', 'store_and_fwd_flag', 'PULocationID', 'DOLocationID', 'payment_type', 'fare_amount', 'extra', 'mta_tax', 'tip_amount', 'tolls_amount', 'improvement_surcharge', 'total_amount']
+
+  SELECTED_COLUMNS:
+    - ['PickUp_datetime', 'PUlocationID', 'DOlocationID']
+    - ['PickUp_datetime', 'PUlocationID', 'DOlocationID']
+    - ['PickUp_datetime', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude']
+    - ['PickUp_datetime', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude']
+    - ['PickUp_datetime', 'Pickup_longitude', 'Pickup_latitude', 'Dropoff_longitude', 'Dropoff_latitude']
+    - ['PickUp_datetime', 'PULocationID', 'DOLocationID']
+    - ['PickUp_datetime', 'PULocationID', 'DOLocationID']
+    - ['PickUp_datetime', 'Start_Lon', 'Start_Lat', 'End_Lon', 'End_Lat']
+    - ['PickUp_datetime', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude']
+    - ['PickUp_datetime', ' pickup_longitude', ' pickup_latitude', ' dropoff_longitude', ' dropoff_latitude']
+    - ['PickUp_datetime', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude']
+    - ['PickUp_datetime', 'pickup_longitude', 'pickup_latitude', 'dropoff_longitude', 'dropoff_latitude']
+    - ['PickUp_datetime', 'PULocationID', 'DOLocationID']
+    - ['PickUp_datetime', 'PULocationID', 'DOLocationID']
